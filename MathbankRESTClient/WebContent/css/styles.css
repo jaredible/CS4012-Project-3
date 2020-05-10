@@ -1,0 +1,253 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: 18px;
+	line-height: 1.58;
+	color: #333;
+}
+
+.gradient {
+	background: #d53369;
+	background: -webkit-linear-gradient(to left, #cbad6d, #d53369);
+	background: linear-gradient(to left, #cbad6d, #d53369);
+	background-size: 400% 400%;
+	-webkit-animation: sooth 30s ease infinite;
+	-moz-animation: sooth 30s ease infinite;
+	animation: sooth 30s ease infinite;
+}
+
+@-webkit-keyframes sooth {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes sooth {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes sooth {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+h1 {
+	font-size: 36px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+i {
+	vertical-align: middle;
+	color: #626262;
+}
+
+textarea {
+	border: 1px solid #E8E8E8;
+}
+
+.title {
+	text-align: center;
+}
+
+.problem-wrapper {
+	position: absolute;
+	max-width: 650px;
+	width: 100%;
+	top: 30px;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 15px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+	overflow-y: hidden;
+	z-index: 2;
+}
+
+.form-control {
+	font-size: 16px;
+	padding-left: 15px;
+	outline: none;
+	border: 1px solid #555;
+	border-radius: 0;
+}
+
+.form-control:focus {
+	border: 1px solid #626262;
+}
+
+.problem-wrapper .form-control {
+	width: 100%;
+	height: 100px;
+}
+
+.problem-wrapper .problem-create {}
+
+.problem-wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: -15px;
+	margin-right: -15px;
+	overflow-y: scroll;
+	height: 100%;
+}
+
+.problem-wrapper ul li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #555;
+}
+
+.problem-wrapper ul li span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.problem-wrapper ul li h5 {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+.problem-wrapper .problem-content {
+	width: 100%;
+	margin-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.problem-content img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.problem-wrapper .problem-selected {
+	display: block;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.problem-wrapper .problem-selected i {
+	font-size: 20px;
+}
+
+.no-problems {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.problem-id {
+	display: inline-block;
+}
+
+li.selected .problem-id {
+	color: #757575;
+}
+
+li.selected .problem-content {
+	color: #757575;
+}
+
+li.selected i {
+	color: #757575;
+}
+
+.problem-list {
+}
+
+.problem-container {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+.btn {
+	margin-top: .5rem;
+	background: #999;
+	color: #fff;
+	border: 1px solid #555 !important;
+	border-radius: 0;
+}
+
+.alert-danger {
+	margin-top: .5rem;
+	border: 1px solid #555 !important;
+	border-radius: 0;
+}
+
+#generateReportButton {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.footer-fixed {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	z-index: 1;
+}
+
+.footer-fixed a {
+	color: #fff;
+}
+
+.footer-fixed a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.problem-number {
+	display: inline-block;
+}
+
+.problem-space {
+	margin-bottom: 10rem;
+}
+
+.testing {
+	margin-top: 15px;
+}
